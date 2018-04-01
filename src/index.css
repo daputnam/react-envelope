@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 4px;
+}
+
+.envelope {
+  width: 600px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+.from-person {
+  color: blue;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.to-person {
+  display: flex;
+  justify-content: center;
+}
+
+.stamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin:10px; */
+  height: 80px;
+  width: 70px;
+  border: 1px dotted black;
+}
