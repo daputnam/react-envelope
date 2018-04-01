@@ -33,7 +33,7 @@ const Envelope = props => {
   );
 };
 
-const person = {
+const person1 = {
   firstName: "Bob",
   lastName: "Brasky",
   address: {
@@ -44,8 +44,19 @@ const person = {
     zip: 87878
   }
 };
+const person2 = {
+  firstName: "Mary",
+  lastName: "Smith",
+  address: {
+    number: 44,
+    street: "Origin St",
+    city: "Big City",
+    state: "MI",
+    zip: 90210
+  }
+};
 
 ReactDOM.render(
-  <Envelope toPerson={person} fromPerson={person} />,
+  <Envelope toPerson={person1} fromPerson={person2} />,
   document.getElementById("root")
 );
