@@ -35,3 +35,38 @@ p {
   width: 70px;
   border: 1px dotted black;
 }
+
+.credit-card {
+  margin: 50px;
+  background-color: royalblue;
+  color:white;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.bank-name {
+  padding: 15px 15px 0 0 ;
+  font-size: 29px;
+  /* font-weight: bold; */
+  font-family: Barmeno;
+  text-align: right;
+}
+
+.card-number {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-family: ITC Officina;
+}
+.card-first-four {
+  font-size: 10px;
+  padding-left:40px;
+}
+.valid-thru {
+  font-size: 10px;
+  padding: 10px 0 0 40px;
+}
+.name {
+  padding: 10px 0 0 40px;
+}

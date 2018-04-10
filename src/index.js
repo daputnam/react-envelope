@@ -33,6 +33,17 @@ const Envelope = props => {
   );
 };
 
+const CreditCard = props => {
+  return (
+    <div className="credit-card">
+      <div className="bank-name">{props.cardInfo.bankName}</div>
+      <div className="card-number">{props.cardInfo.cardNumber}</div>
+      <div className="card-first-four">{props.cardInfo.cardNumber.slice(0,4)}</div>
+      <div className="valid-thru">VALID THRU {props.cardInfo.expirationMonth}/{props.cardInfo.expirationYear}</div>
+      <div className="name">{props.cardInfo.name.toUpperCase()}</div>
+    </div>
+  )
+}
 const person1 = {
   firstName: "Bob",
   lastName: "Brasky",
@@ -56,7 +67,15 @@ const person2 = {
   }
 };
 
+const creditInfo = {
+  bankName: "Big Bank, Inc",
+  name: "Billy Stevens",
+  cardNumber: "2222 1234 5678 9123",
+  expirationMonth: "08",
+  expirationYear: "29" 
+}
+
 ReactDOM.render(
-  <Envelope toPerson={person1} fromPerson={person2} />,
+  <CreditCard cardInfo={creditInfo} />,
   document.getElementById("root")
 );
