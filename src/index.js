@@ -55,6 +55,8 @@ const MotivationalPoster = props => {
   )
 }
 
+const Email;
+
 const person1 = {
   firstName: "Bob",
   lastName: "Brasky",
