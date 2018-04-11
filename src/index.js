@@ -55,7 +55,18 @@ const MotivationalPoster = props => {
   )
 }
 
-const Email;
+const Email = props => {
+  return (
+    <div className="email">
+      <div className="sender">sender</div>
+      <div className="title">{props.email.title}</div>
+      <div className="subject">subject</div>
+      <div className="date">date</div>
+      <div className="message">message</div>
+    </div>
+    
+  )
+}
 
 const person1 = {
   firstName: "Bob",
@@ -92,7 +103,14 @@ const poster = {
   title: "Code alot",
   text: "it's super easy"
 }
+const email = {
+  sender:"Bill Brasky",
+  subject:"Story about my wife",
+  date: "July 15th 2018",
+  message: "Thanks for taking the time to listen to my message. Here is more of the message."
+}
 ReactDOM.render(
-  <MotivationalPoster image={poster.image} title={poster.title} text={poster.text} />,
+  <Email email={email}/>,
   document.getElementById("root")
 );
+{/* <MotivationalPoster image={poster.image} title={poster.title} text={poster.text} /> */}
