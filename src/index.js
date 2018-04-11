@@ -44,6 +44,17 @@ const CreditCard = props => {
     </div>
   )
 }
+
+const MotivationalPoster = props => {
+  return (
+    <div className="poster"> 
+      <div className="image"><img src={props.image}/> </div>
+      <div className="poster-title">{props.title}</div>
+      <div className="poster-text">{props.text}</div>
+    </div>
+  )
+}
+
 const person1 = {
   firstName: "Bob",
   lastName: "Brasky",
@@ -74,8 +85,12 @@ const creditInfo = {
   expirationMonth: "08",
   expirationYear: "29" 
 }
-
+const poster = {
+  image: "https://avatars0.githubusercontent.com/u/11948214?s=460&v=4",
+  title: "Code alot",
+  text: "it's super easy"
+}
 ReactDOM.render(
-  <CreditCard cardInfo={creditInfo} />,
+  <MotivationalPoster image={poster.image} title={poster.title} text={poster.text} />,
   document.getElementById("root")
 );

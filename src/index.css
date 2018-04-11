@@ -70,3 +70,29 @@ p {
 .name {
   padding: 10px 0 0 40px;
 }
+
+.poster {
+  border: 2px solid #32a1ce;
+  background-color: black;
+  color: rgb(41, 125, 194);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 400px;
+  height: 300px;
+}
+
+.image img {
+  margin-top:10px;
+  height: 200px;
+  border: 1px solid #32a1ce;
+}
+.poster-title {
+  padding-top: 5px;
+  font: bold 2.2em "Fira Sans", serif;
+}
+.poster-text {
+  color: white;
+  font: 1em "Fira Sans", sans-serif;
+}
