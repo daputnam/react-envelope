@@ -96,3 +96,33 @@ p {
   color: white;
   font: 1em "Fira Sans", sans-serif;
 }
+
+.email {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: darkgrey;
+  flex-direction: row;
+  display:flex;
+  margin: 10px;
+  padding:5px ;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.top-row {
+  font-weight: bold;
+  color: #3b3b3b;
+  flex-direction: row;
+  display:flex;
+  justify-content: space-between;
+  padding-right:10px;
+}
+.top-row, .bottom-row{
+  
+}
+.sender, .subject, .date {
+  flex:1;
+}
+.check {
+  margin-top:10px;
+  flex: 0;
+  margin-right:10px;
+}
