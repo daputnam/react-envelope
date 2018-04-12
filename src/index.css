@@ -115,9 +115,7 @@ p {
   justify-content: space-between;
   padding-right:10px;
 }
-.top-row, .bottom-row{
-  
-}
+
 .sender, .subject, .date {
   flex:1;
 }
