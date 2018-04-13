@@ -83,6 +83,17 @@ const Email = props => {
   );
 };
 
+const All = props => {
+  return (
+    <div>
+      <Email email={email} />
+      <MotivationalPoster image={poster.image} title={poster.title} text={poster.text} />
+      <CreditCard cardInfo={creditInfo} />
+      <Envelope toPerson={person1} fromPerson={person2} />
+    </div>
+  )
+};
+
 const person1 = {
   firstName: "Bob",
   lastName: "Brasky",
@@ -125,7 +136,7 @@ const email = {
   message:
     "Thanks for taking the time to listen to my message. Here is more of the message."
 };
-ReactDOM.render(<Email email={email} />, document.getElementById("root"));
-{
+ReactDOM.render(<All />, document.getElementById("root"));
+// {<Email email={email} />
   /* <MotivationalPoster image={poster.image} title={poster.title} text={poster.text} /> */
-}
+
